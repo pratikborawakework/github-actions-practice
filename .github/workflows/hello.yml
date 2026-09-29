@@ -1,0 +1,24 @@
+# Workflow
+# Should have name
+name: Hello
+# When the cworkflow runs
+on: 
+  workflow_dispatch: 
+# Jobs
+# Should be inside the workflow
+# job tells what the workflow should do,there can more than one job
+jobs:
+# first job say-hello
+  say-hello:
+  # creates ephermal container with ubuntu running
+    runs-on: ubuntu-latest
+    # ephermal container have steps to continue name that steps to execute,name those steps and run: run has commands
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello Dosto"
+      
+# Steps
+# Should be inside the job
+
+# Actions
+# Should be inside the Steps
